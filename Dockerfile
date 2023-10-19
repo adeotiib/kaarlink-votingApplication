@@ -1,4 +1,4 @@
-# Use the official Tomcat image as the base image
+  # Use the official Tomcat image as the base image
 FROM tomcat:10.1.13-jdk17
 
 # Set metadata for the image
@@ -16,7 +16,7 @@ EXPOSE 8080
 
 # Define the default command to start Tomcat
 CMD ["catalina.sh", "run"]
-
+#Docker me
 # docker build . -t jendaredocker/jendarey-voting-app-two
 # docker run -d -p 11000:8080 --name=voting-app-two jendaredocker/jendarey-voting-app-two:latest
 
